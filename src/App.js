@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Full Name Display</h1>
         <form onSubmit={handleSubmit} className="App-form">
           <div>
             <label>First Name: </label>
@@ -40,9 +41,10 @@ function App() {
           </div>
           <button type='submit' style={{width: '4rem'}}>Submit</button>
         </form>
+        {fullName &&
         <div>
-         {fullName && <p>Full Name: {fullName}</p>}
-        </div>
+        <p>Full Name: {fullName}</p>
+        </div>}
         
       </header>
     </div>
